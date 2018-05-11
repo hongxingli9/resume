@@ -1,0 +1,327 @@
+@title-name-color: rgb(164, 211, 209);
+@dark-grey: rgb(51, 51, 51);
+@white-color: #fff;
+@atrovirens: rgb(17, 128, 127);  //墨绿色
+
+.overflow-hidden() {
+	overflow: hidden;
+}
+
+.bold-font-weight() {
+	font-weight: bold;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, div, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+body, .timeline {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: @white-color;
+}
+
+ul {
+	list-style-type: none;
+}
+
+strong {
+	color: @atrovirens;
+}
+
+.wrapper {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 1px 2px 3px;
+}
+
+.header {
+	background-color: @dark-grey;
+	color: @white-color;
+	.overflow-hidden;
+	padding: 26px 45px;
+}
+
+.qrcode, .contact, .content .column-1, .content .column-2, .section-title-wrapper .icon, .section-title-wrapper .section-title, .links-wrapper ul{
+	float: left;
+}
+
+.contact {
+	margin-left: 32px;
+	li {
+		margin-bottom: 6px;
+	font-size: 20px;
+	}
+	.iconfont {
+		font-size: 20px;
+		margin-right: 12px;
+	}
+}
+
+.qrcode, .header img{
+	width: 130px;
+	height: 130px;
+}
+
+.title, .title h2, .progress, .company .timeline, .links-wrapper .links, .links-wrapper .links span, .links-wrapper ul a{
+	float: right;
+}
+
+.title h1 {
+	color: @title-name-color;
+	font-size: 80px;
+	line-height: 80px;
+	margin-bottom: 8px;
+}
+
+.column-1, .column-2 {
+	box-sizing: border-box;
+}
+
+.content {
+	.overflow-hidden;
+	padding: 30px 28px 0;
+	font-size: 16px;
+	.column-1 {
+		width: 44%;
+		margin-bottom: 8px;
+	}
+	.column-2  {
+		width: 56%;
+		padding-left: 16px;
+	}
+}
+
+.section-title-wrapper {
+	.overflow-hidden;
+	.icon {
+		display: inline-block;
+		text-align: center;
+	    color: @white-color;
+	    font-size: 20px;
+	    width: 38px;
+	    height: 38px;
+	    line-height: 38px;
+	    background: @dark-grey;
+	    border-radius: 19px;
+	}
+}
+
+.section-zh, .section-en, .school-wrapper .school-name, .links-wrapper .iconfont, .links-wrapper .links span:nth-child(3){
+	display: block;
+}
+
+.section-title-wrapper h3 {
+	margin-left: 10px;
+}
+
+.section-en {
+	color: rgb(16, 128, 127);
+}
+
+.education, .experience, .skill {
+	position: relative;
+}
+
+.education .timeline-wrapper, .experience .section-context, .skill .section-context{
+	margin-left: 17px;
+	padding-top: 20px;
+	margin-top: -22px;
+	border-left: 5px solid @dark-grey;
+}
+
+.education .school-wrapper {
+	margin-left: 30px;
+	margin-top: 11px;
+	padding-bottom: 10px;
+}
+
+.education .timeline-wrapper .icon, .company, .skill-item {
+	position: relative;
+	margin-top: 10px;
+	background: @dark-grey;
+	border-radius: 6px;
+	height: 28px;
+	line-height: 28px;
+}
+
+.education .timeline-wrapper .icon:before, .company i, .skill-item i {
+ 	position: absolute;
+ 	width: 30px;
+ 	height: 30px;
+ 	line-height: 30px;
+ 	text-align: center;
+ 	background-color: @atrovirens;
+ 	border-radius: 15px;
+ 	left: -17px;
+ 	top: -1px;
+ 	color: @white-color;
+}
+
+.education .timeline, .company .company-name, .company .timeline, .skill-item span{
+	margin-left: 28px;
+	color: @white-color;
+	font-size: 1.17em;
+	line-height: 1.17em;
+	font-weight: normal;
+}
+
+.school-wrapper {
+	.section-zh {
+		font-size: 27px;
+		.bold-font-weight;
+	}
+	ul {
+		margin-top: 7px;
+	}
+	.major {
+		&:before {
+			margin-right: 5px;
+		}
+	}
+}
+
+.school-wrapper .section-en, .links-wrapper ul span{
+	.bold-font-weight;
+}
+
+.education:after, .experience:after, .skill:after {
+	position: absolute;
+	content: "";
+	width: 12px;
+	height: 12px;
+	background-color: @dark-grey;
+	border-radius: 6px;
+	display: block;
+	bottom: -1px;
+	left: 14px;
+}
+
+.language {
+	margin-top: 16px;
+}
+
+.language-certificates {
+	.bold-font-weight;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.language-certificates, .language-skills {
+	padding-left: 28px;
+}
+
+.skill-content i {
+	margin-right: 10px;
+}
+
+.progress {
+	display: inline-block;
+    width: 85%;
+    height: 20px;
+    margin-top: -2px;
+    background-color: @dark-grey;
+    border-radius: 6px;
+}
+
+.progress-bar {
+	width: 65%;
+	height: 20px;
+	border-radius: 6px;
+	background-color: @atrovirens;
+}
+
+.experience {
+	.language;
+	.section-context {
+		padding-top: 20px;
+		padding-bottom: 15px;
+	}
+}
+
+.company .company-name, .company .timeline, .skill-item span {
+	font-size: 16px;
+	margin-left: 22px;
+}
+
+.company .timeline {
+	margin-right: 20px;
+	margin-top: 4px;
+}
+
+.position, .responsibility, .skill-content {
+	position: relative;
+	margin-left: 20px;
+	margin-top: 12px;
+	padding-right: 6px;
+}
+
+.responsibility i, .language-skills i, .skill-content i{
+	position: absolute;
+}
+
+.responsibility span, .language-skills span, .skill-content span{
+	display: inline-block;
+	margin-left: 23px;
+	font-size: 16px;
+}
+
+.links-wrapper {
+	margin-top: 20px;
+	margin-left: 12px;
+	.overflow-hidden;
+	.iconfont {
+		width: 38px;
+		height: 38px;
+		border-radius: 19px;
+		background-color: @dark-grey;
+		line-height: 38px;
+		color: @white-color;
+		text-align: center;
+		margin-left: 8px;
+	}
+	.links {
+		span:nth-child(3) {
+			.bold-font-weight;
+			color: @atrovirens;
+			margin-top: 20px;
+			margin-right: -60px;
+		}
+	}
+}
+
+
+.links-wrapper ul {
+	margin-top: 5px;
+	width: 100%;
+	li span {
+		font-size: 12px;
+	}
+	a {
+		color: @atrovirens;
+		font-size: 12px;
+	}
+}
+
+.skill-content {
+	p {
+		margin: 0;
+	}
+	h4 {
+		margin-bottom: 6px;
+	}
+}
+
+.experience h4, .skill-content h4 {
+	font-size: 18px;
+}
+
+.experience span, .skill-content span {
+	margin-bottom: 4px;
+	line-height: 1.2em;
+}

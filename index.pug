@@ -1,0 +1,136 @@
+extend layout
+
+block header
+	div.header
+		div.qrcode
+			img(src='img/WechatIMG.jpeg')
+		div.contact
+			ul
+				li
+					span.iconfont.icon-dianhua
+					a= header.contact.phone
+				li 
+					span.iconfont.icon-iconfontyoujian
+					a(href='mailto:'+header.contact.mail)= header.contact.mail
+				li
+					span.iconfont.icon-github
+					a(href=header.contact.github)= header.contact.github
+				li
+					span.iconfont.icon-rss
+					a(href=header.contact.blog)= header.contact.blog
+		div.title
+			h1= header.title.name
+			h2= header.title.job
+
+block education
+	div.education
+		div.section-title-wrapper
+			div.icon.iconfont.icon-book
+			h3.section-title
+				span.section-zh
+					|	教育经历
+				span.section-en
+					|	Education
+		div.timeline-wrapper
+			div.icon.iconfont.icon-bookmark
+				span.timeline= education.time
+			div.school-wrapper
+				span.school-name.section-zh= education.schoolnamezh
+				span.school-name.section-en= education.schoolnameen
+				ul
+					li.iconfont.icon-xueshimao.major= education.major
+
+block language
+	div.language
+		div.section-title-wrapper
+			div.icon.iconfont.icon-commento
+			h3.section-title
+				span.section-zh
+					|	语言水平
+				span.section-en
+					|	Language
+		div.language-certificates
+			span.language-cert-type= language.certificate
+			div.progress
+				div.progress-bar
+		ul.language-skills
+			each val in language.skills
+				li
+					i.iconfont.icon-xing
+					span= val
+
+block experience
+	div.experience
+		div.section-title-wrapper
+			div.icon.iconfont.icon-rocket
+			h3.section-title
+				span.section-zh
+					|	项目与工作经验
+				span.section-en
+					|	Experience
+		ul.section-context
+			each company in experience.companies
+				li.item
+					h4.company
+						i.iconfont.icon-briefcase
+						span.company-name= company.name
+						span.timeline= company.timeline
+					h4.position= company.position
+					ul.responsibility
+						each val in company.responsibility
+							li
+								i.iconfont.icon-4
+								span!= val
+
+block links-wrapper
+	div.links-wrapper
+		h4.links
+			span.iconfont.icon-icon-test
+			span 相关链接
+			span Links
+		ul
+			each item in links
+				li
+					span= item.title
+					a(href=item.url)= item.url
+
+block skill
+	div.skill
+		div.section-title-wrapper
+			div.icon.iconfont.icon-tool
+			h3.section-title
+				span.section-zh 技能
+				span.section-en Skill
+		ul.section-context
+			each val in skills
+				li.item
+					div.skill-item
+						i.iconfont.icon-cogs
+						span= val.category
+					each content in val.contents
+						div.skill-content
+							if content.title
+								h4!= content.title
+							ul
+								each description in content.descriptions
+									li
+										i.iconfont.icon-xing
+										span!= description
+							if content.others
+								each other in content.others
+									p!= other
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

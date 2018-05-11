@@ -1,0 +1,350 @@
+html, body, h1, h2, h3, h4, h5, h6, div, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+body, .timeline {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul {
+	list-style-type: none;
+}
+
+strong {
+	color: rgb(17, 128, 127);
+}
+
+.wrapper {
+	width: 970px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 1px 2px 3px;
+}
+
+.header {
+	background-color: rgb(50, 51, 51);
+	color: #fff;
+	overflow: hidden;
+	padding: 26px 45px;
+}
+
+.qrcode  {
+	float: left;
+}
+
+.contact {
+	float: left;
+	margin-left: 32px;
+}
+
+.contact li{
+	margin-bottom: 6px;
+	font-size: 20px;
+}
+
+.contact .iconfont {
+	font-size: 20px;
+	margin-right: 12px;
+}
+
+.qrcode, .header img{
+	width: 130px;
+	height: 130px;
+}
+
+.title {
+	float: right;
+}
+
+.title h1 {
+	color: rgb(164, 211, 209);
+	font-size: 80px;
+	line-height: 80px;
+	margin-bottom: 8px;
+}
+
+.title h2 {
+	float: right;
+}
+
+.content {
+	overflow: hidden;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.column-1, .column-2 {
+	box-sizing: border-box;
+}
+
+.content .column-1 {
+	width: 43%;
+	float: left;
+}
+
+.content .column-2  {
+	width: 57%;
+	float: left;
+	padding-left: 16px;
+}
+
+.section-title-wrapper {
+	overflow: hidden;
+}
+
+.section-title-wrapper .icon {
+	display: inline-block;
+	float: left;
+	text-align: center;
+    color: #fff;
+    font-size: 20px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: rgb(51,51,51);
+    border-radius: 19px;
+}
+
+.section-title-wrapper .section-title {
+	float: left;
+}
+
+.section-zh, .section-en {
+	display: block;
+}
+
+.section-title-wrapper h3 {
+	margin-left: 10px;
+}
+
+.section-en {
+	color: rgb(16, 128, 127);
+}
+
+.education, .experience, .skill {
+	position: relative;
+}
+
+.education .timeline-wrapper, .experience .section-context, .skill .section-context{
+	margin-left: 17px;
+	padding-top: 20px;
+	margin-top: -22px;
+	border-left: 5px solid rgb(51, 51, 51);
+}
+
+.education .school-wrapper {
+	margin-left: 30px;
+	margin-top: 11px;
+	padding-bottom: 10px;
+}
+
+.education .timeline-wrapper .icon, .company, .skill-item {
+	position: relative;
+	margin-top: 10px;
+	background: rgb(51, 51, 51);
+	border-radius: 6px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.education .timeline-wrapper .icon:before, .company i, .skill-item i {
+ 	position: absolute;
+ 	width: 26px;
+ 	height: 26px;
+ 	line-height: 26px;
+ 	text-align: center;
+ 	background-color: rgb(17, 128, 127);
+ 	border-radius: 13px;
+ 	left: -15px;
+ 	top: -2px;
+ 	color: #fff;
+}
+
+.education .timeline, .company .company-name, .company .timeline, .skill-item span{
+	margin-left: 28px;
+	color: #fff;
+	font-size: 1.17em;
+	line-height: 1.17em;
+	font-weight: normal;
+}
+
+.school-wrapper .school-name {
+	display: block;
+}
+
+.school-wrapper .section-zh {
+	font-size: 27px;
+	font-weight: bold;
+}
+
+.school-wrapper .section-en {
+	font-weight: bold;
+}
+
+.school-wrapper ul {
+	margin-top: 7px;
+}
+
+.education .major:before {
+	margin-right: 5px;
+}
+
+.education:after, .experience:after, .skill:after {
+	position: absolute;
+	content: "";
+	width: 12px;
+	height: 12px;
+	background-color: rgb(51, 51, 51);
+	border-radius: 6px;
+	display: block;
+	bottom: -1px;
+	left: 14px;
+}
+
+.language {
+	margin-top: 20px;
+}
+
+.language-certificates {
+	font-weight: bold;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.language-certificates, .language-skills {
+	padding-left: 28px;
+}
+
+.skill-content i {
+	margin-right: 10px;
+}
+
+.progress {
+	display: inline-block;
+    width: 85%;
+    height: 20px;
+    margin-top: -2px;
+    background-color: rgb(51,51,51);
+    border-radius: 6px;
+    float: right;
+}
+
+.progress-bar {
+	width: 65%;
+	height: 20px;
+	border-radius: 6px;
+	background-color: rgb(17, 128, 127);
+}
+
+.experience {
+	margin-top: 20px;
+}
+
+.experience .section-context {
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+.company .company-name, .company .timeline, .skill-item span {
+	font-size: 14px;
+	margin-left: 22px;
+}
+
+.company .timeline {
+	float: right;
+	margin-right: 20px;
+	margin-top: 4px;
+}
+
+.position, .responsibility, .skill-content {
+	position: relative;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.responsibility i, .language-skills i, .skill-content i{
+	position: absolute;
+}
+
+.responsibility span, .language-skills span, .skill-content span{
+	display: inline-block;
+	margin-left: 23px;
+	font-size: 14px;
+}
+
+.links-wrapper {
+	margin-top: 10px;
+	margin-left: 12px;
+	overflow: hidden;
+}
+
+.links-wrapper .links {
+	float: right;
+}
+
+.links-wrapper ul {
+	float: left;
+}
+
+.links-wrapper .iconfont {
+	display: block;
+	width: 38px;
+	height: 38px;
+	border-radius: 19px;
+	background-color: rgb(51, 51, 51);
+	line-height: 38px;
+	color: #fff;
+	text-align: center;
+	margin-left: 8px;
+}
+
+.links-wrapper .links span {
+	float: right;
+}
+
+.links-wrapper .links span:nth-child(3) {
+	display: block;
+	font-weight: bold;
+	color: rgb(17, 128, 127);
+	margin-top: 20px;
+	margin-right: -60px;
+}
+
+.links-wrapper ul {
+	margin-top: 5px;
+	width: 100%;
+}
+
+.links-wrapper ul span {
+	font-weight: bold;
+}
+
+.links-wrapper ul a {
+	color: rgb(17, 128, 127);
+	float: right;
+	font-size: 14px;
+}
+
+.skill-content p {
+	margin: 0;
+}
+
+.experience h4, .skill-content h4 {
+	font-size: 18px;
+}
+
+.skill-content h4 {
+	margin-bottom: 6px;
+}
+
+.experience span, .skill-content span {
+	display: inline-block;
+	margin-bottom: 2px;
+	line-height: 1.2em;
+}

@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		title= title
+		meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+		link(rel='stylesheet' type='text/css' href='css/style.css')
+		link(rel='stylesheet' type='text/css' href='font/iconfont.css')
+	body
+		div.wrapper
+			block header
+			div.content
+				div.column-1
+					block education
+					block language
+					block experience
+					block links-wrapper
+				div.column-2
+					block skill
