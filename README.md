@@ -6,7 +6,7 @@
 
 使用gulp+less+pug制作的简历
 
-在local.json中填写个人信息
+在locals.json中填写个人信息
 
 ## Development
 
